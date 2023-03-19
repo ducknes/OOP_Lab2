@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bank_class.cs" />
+    <Compile Include="Functions.cs" />
     <Compile Include="Win32.cs" />
     <Compile Include="MyException.cs" />
     <Compile Include="Form1.cs">

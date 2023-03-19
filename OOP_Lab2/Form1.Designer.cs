@@ -69,7 +69,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -81,6 +80,27 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.boom = new System.Windows.Forms.Button();
+            this.changeFields = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.change = new System.Windows.Forms.Button();
+            this.find = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -88,6 +108,7 @@
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -95,6 +116,7 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.changeFields);
             this.panel1.Controls.Add(this.boom);
             this.panel1.Controls.Add(this.twoParamConstructor);
             this.panel1.Controls.Add(this.textBox11);
@@ -126,7 +148,7 @@
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(256, 449);
+            this.textBox11.Location = new System.Drawing.Point(256, 478);
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(43, 20);
@@ -137,7 +159,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(11, 449);
+            this.label17.Location = new System.Drawing.Point(11, 478);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(242, 17);
             this.label17.TabIndex = 8;
@@ -521,36 +543,42 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.find);
+            this.groupBox4.Controls.Add(this.change);
             this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.textBox12);
+            this.groupBox4.Controls.Add(this.label20);
+            this.groupBox4.Controls.Add(this.textBox13);
+            this.groupBox4.Controls.Add(this.label21);
+            this.groupBox4.Controls.Add(this.textBox14);
+            this.groupBox4.Controls.Add(this.label22);
+            this.groupBox4.Controls.Add(this.textBox15);
+            this.groupBox4.Controls.Add(this.label24);
+            this.groupBox4.Controls.Add(this.textBox16);
+            this.groupBox4.Controls.Add(this.label25);
+            this.groupBox4.Controls.Add(this.textBox17);
+            this.groupBox4.Controls.Add(this.label26);
+            this.groupBox4.Controls.Add(this.textBox18);
+            this.groupBox4.Controls.Add(this.comboBox1);
             this.groupBox4.Controls.Add(this.label23);
-            this.groupBox4.Location = new System.Drawing.Point(364, 12);
+            this.groupBox4.Location = new System.Drawing.Point(358, 12);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(479, 451);
             this.groupBox4.TabIndex = 16;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Создание";
+            this.groupBox4.Text = "Изменение";
             this.groupBox4.Visible = false;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(34, 191);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(420, 76);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "Банк создан";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(168, 23);
+            this.label23.Location = new System.Drawing.Point(163, 23);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(152, 17);
+            this.label23.Size = new System.Drawing.Size(141, 17);
             this.label23.TabIndex = 0;
-            this.label23.Text = "Конструктор банка";
+            this.label23.Text = "Изменение полей";
             // 
             // groupBox5
             // 
@@ -627,17 +655,228 @@
             this.boom.UseVisualStyleBackColor = true;
             this.boom.Click += new System.EventHandler(this.boom_Click);
             // 
+            // changeFields
+            // 
+            this.changeFields.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.changeFields.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeFields.ForeColor = System.Drawing.Color.White;
+            this.changeFields.Location = new System.Drawing.Point(32, 412);
+            this.changeFields.Name = "changeFields";
+            this.changeFields.Size = new System.Drawing.Size(233, 45);
+            this.changeFields.TabIndex = 11;
+            this.changeFields.Text = "Изменение полей";
+            this.changeFields.UseVisualStyleBackColor = false;
+            this.changeFields.Click += new System.EventHandler(this.changeFields_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.label18);
+            this.groupBox6.Controls.Add(this.label19);
+            this.groupBox6.Location = new System.Drawing.Point(358, 9);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(479, 451);
+            this.groupBox6.TabIndex = 17;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Создание";
+            this.groupBox6.Visible = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(34, 191);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(420, 76);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Банк создан";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(168, 23);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(152, 17);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Конструктор банка";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(114, 45);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(217, 339);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(63, 15);
+            this.label16.TabIndex = 28;
+            this.label16.Text = "Локация";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(100, 360);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(272, 20);
+            this.textBox12.TabIndex = 29;
+            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(197, 298);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(106, 15);
+            this.label20.TabIndex = 26;
+            this.label20.Text = "Год основания";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(100, 316);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(272, 20);
+            this.textBox13.TabIndex = 27;
+            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(174, 209);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(139, 15);
+            this.label21.TabIndex = 24;
+            this.label21.Text = "Процентная ставка";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(100, 275);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(272, 20);
+            this.textBox14.TabIndex = 25;
+            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(169, 257);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(153, 15);
+            this.label22.TabIndex = 22;
+            this.label22.Text = "Количество клиентов";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(100, 227);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(272, 20);
+            this.textBox15.TabIndex = 23;
+            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(179, 167);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(125, 15);
+            this.label24.TabIndex = 20;
+            this.label24.Text = "Сумма депозитов";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(100, 186);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(272, 20);
+            this.textBox16.TabIndex = 21;
+            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Black;
+            this.label25.Location = new System.Drawing.Point(161, 119);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(161, 15);
+            this.label25.TabIndex = 18;
+            this.label25.Text = "Количество депозитов";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(100, 137);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(272, 20);
+            this.textBox17.TabIndex = 19;
+            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.Location = new System.Drawing.Point(163, 78);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(150, 15);
+            this.label26.TabIndex = 16;
+            this.label26.Text = "Наименование банка";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(100, 96);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(272, 20);
+            this.textBox18.TabIndex = 17;
+            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // change
+            // 
+            this.change.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.change.Location = new System.Drawing.Point(153, 397);
+            this.change.Name = "change";
+            this.change.Size = new System.Drawing.Size(167, 35);
+            this.change.TabIndex = 30;
+            this.change.Text = "Изменить";
+            this.change.UseVisualStyleBackColor = true;
+            this.change.Click += new System.EventHandler(this.change_Click);
+            // 
+            // find
+            // 
+            this.find.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.find.Location = new System.Drawing.Point(241, 42);
+            this.find.Name = "find";
+            this.find.Size = new System.Drawing.Size(129, 26);
+            this.find.TabIndex = 31;
+            this.find.Text = "Найти";
+            this.find.UseVisualStyleBackColor = true;
+            this.find.Click += new System.EventHandler(this.find_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(896, 504);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Name = "Form1";
             this.Text = "Лабораторная работа №2 Антонов Новоженов Класс \"Банк\"";
@@ -654,6 +893,8 @@
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -698,7 +939,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button viewBanks;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -712,6 +952,27 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Button boom;
+        private System.Windows.Forms.Button changeFields;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Button change;
+        private System.Windows.Forms.Button find;
     }
 }
 

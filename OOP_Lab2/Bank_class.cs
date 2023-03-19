@@ -57,10 +57,10 @@ namespace OOP_Lab2
         /// </summary>
         public Bank()
         {
-            _bankName = "Банк";
+            _bankName = Functions.randomString();
             _countDeposits = 0;
-            _amountDeposits = 0;
-            _interestRate = 0;
+            _amountDeposits = 0.0;
+            _interestRate = 0.0F;
             _numClients = 0;
             _yearFoundation = 1970;
             _location = "Город";
