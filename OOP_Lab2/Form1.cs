@@ -329,5 +329,7 @@ namespace OOP_Lab2
                 Win32.MessageBox(0, MyExp.Message, "Ошибка!", 0);
             }
         }
+
+        
     }
 }
