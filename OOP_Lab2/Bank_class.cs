@@ -45,11 +45,6 @@ namespace OOP_Lab2
         /// </summary>
         private string _location;
 
-        /// <summary>
-        /// Количество банков
-        /// </summary>
-        public static long banksCounter { get; set; }
-
         /* МЕТОДЫ */
 
         /// <summary>
