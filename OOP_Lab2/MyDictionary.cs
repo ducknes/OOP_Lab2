@@ -21,7 +21,7 @@ namespace OOP_Lab2
                 return false;
             }
             _dictionary.Add(key, bank);
-            //objectCreated?.Invoke(bank, null);
+            objectCreated?.Invoke(bank, null);
             return true;
         }
 
