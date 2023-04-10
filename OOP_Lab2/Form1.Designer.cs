@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.poductivity = new System.Windows.Forms.Button();
             this.changeFields = new System.Windows.Forms.Button();
             this.boom = new System.Windows.Forms.Button();
             this.twoParamConstructor = new System.Windows.Forms.Button();
@@ -102,10 +103,9 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.poductivity = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.timeCompare = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -141,6 +141,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(312, 512);
             this.panel1.TabIndex = 0;
+            // 
+            // poductivity
+            // 
+            this.poductivity.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.poductivity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.poductivity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.poductivity.ForeColor = System.Drawing.Color.White;
+            this.poductivity.Location = new System.Drawing.Point(120, 65);
+            this.poductivity.Name = "poductivity";
+            this.poductivity.Size = new System.Drawing.Size(147, 80);
+            this.poductivity.TabIndex = 12;
+            this.poductivity.Text = "Замер производительности";
+            this.poductivity.UseVisualStyleBackColor = false;
+            this.poductivity.Click += new System.EventHandler(this.poductivity_Click);
             // 
             // changeFields
             // 
@@ -939,14 +953,14 @@
             this.Column7,
             this.Column5,
             this.Column6});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Location = new System.Drawing.Point(7, 20);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -1045,20 +1059,6 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Конструктор банка";
             // 
-            // poductivity
-            // 
-            this.poductivity.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.poductivity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.poductivity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.poductivity.ForeColor = System.Drawing.Color.White;
-            this.poductivity.Location = new System.Drawing.Point(120, 65);
-            this.poductivity.Name = "poductivity";
-            this.poductivity.Size = new System.Drawing.Size(147, 80);
-            this.poductivity.TabIndex = 12;
-            this.poductivity.Text = "Замер производительности";
-            this.poductivity.UseVisualStyleBackColor = false;
-            this.poductivity.Click += new System.EventHandler(this.poductivity_Click);
-            // 
             // groupBox7
             // 
             this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1073,6 +1073,19 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Производительность";
             this.groupBox7.Visible = false;
+            // 
+            // timeCompare
+            // 
+            this.timeCompare.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.timeCompare.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeCompare.Location = new System.Drawing.Point(182, 424);
+            this.timeCompare.Name = "timeCompare";
+            this.timeCompare.Size = new System.Drawing.Size(186, 40);
+            this.timeCompare.TabIndex = 1;
+            this.timeCompare.Text = "Произвести замер";
+            this.timeCompare.UseVisualStyleBackColor = true;
+            this.timeCompare.Click += new System.EventHandler(this.timeCompare_Click);
             // 
             // listView1
             // 
@@ -1089,19 +1102,6 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // timeCompare
-            // 
-            this.timeCompare.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.timeCompare.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeCompare.Location = new System.Drawing.Point(182, 424);
-            this.timeCompare.Name = "timeCompare";
-            this.timeCompare.Size = new System.Drawing.Size(186, 40);
-            this.timeCompare.TabIndex = 1;
-            this.timeCompare.Text = "Произвести замер";
-            this.timeCompare.UseVisualStyleBackColor = true;
-            this.timeCompare.Click += new System.EventHandler(this.timeCompare_Click);
             // 
             // Form1
             // 
