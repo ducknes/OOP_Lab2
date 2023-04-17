@@ -1,0 +1,31 @@
+ID: 3 
+Processor: AMD | 4.4 MHz 
+Memory: 32 MB 
+Videocard: 4090 | 24 GB
+Power Unit: 800 W 
+Cost: 11 $
+ID: 1 
+Processor: AMD | 4.2 MHz 
+Memory: 32 MB 
+Videocard: 4090 | 24 GB
+Power Unit: 800 W 
+Cost: 19 $
+ID: 4 
+Processor: Intel | 4.5 MHz 
+Memory: 20 MB 
+Videocard: 4060 | 12 GB
+Power Unit: 700 W 
+Cost: 30 $
+ID: 5 
+Processor: AMD | 4.6 MHz 
+Memory: 32 MB 
+Videocard: 4090 | 24 GB
+Power Unit: 800 W 
+Cost: 49 $
+ID: 2 
+Processor: Intel | 4.3 MHz 
+Memory: 16 MB 
+Videocard: 4060 | 8 GB
+Power Unit: 700 W 
+Cost: 90 $
+
