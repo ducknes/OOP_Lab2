@@ -49,7 +49,7 @@ namespace OOP_Lab2.ClubReport
 
             richTextBox1.AppendText(report.ToString());
 
-            using (StreamWriter writer = new StreamWriter(@"C:\dev\projects\max oop lab\OOP_Lab2\ClubReport\report.txt", false))
+            using (StreamWriter writer = new StreamWriter(@"Z:\Downloads\2 курс\ООП\Labs\OOP_Lab5\ClubReport\report.txt", false))
             {
                 await writer.WriteLineAsync(report.ToString());
             }

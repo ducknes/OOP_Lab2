@@ -1,5 +1,7 @@
 ﻿using OOP_Lab2.ClubReport;
+using OOP_Lab2.LR6;
 using System;
+using System.Numerics;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections.Specialized;
 
 namespace OOP_Lab2
 {
@@ -17,6 +20,9 @@ namespace OOP_Lab2
     /// </summary>
     public partial class ComputerUI : Form 
     {
+
+        CashRegisterProxy cashRegisterProxy = new CashRegisterProxy();
+
         public ComputerUI() 
         {
             InitializeComponent();
@@ -86,6 +92,59 @@ namespace OOP_Lab2
             this.Hide();
             Preview preview = new Preview();
             preview.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            cashRegisterProxy.AddMoney(150);
+            textBox1.Clear();
+            textBox1.Text = cashRegisterProxy.GetMoneyAmount().ToString();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            cashRegisterProxy.ReleaseMoney(15);
+            textBox1.Clear();
+            textBox1.Text = cashRegisterProxy.GetMoneyAmount().ToString();
+        }
+
+        private async void ComputerUI_Load(object sender, EventArgs e)
+        {
+            await SystemTime();
+        }
+
+        private async Task SystemTime()
+        {
+            while (true)
+            {
+                time.Text = DateTime.Now.ToString();
+                await Task.Delay(1000);
+            }
+        }
+
+        private async Task<float> CalculateAverage(int n)
+        {
+            await Task.Delay(1);
+            int[] array = new int[n];
+            int sum = 0;
+            for (int i = 0; i < n; i++)
+            {
+                Random random = new Random();
+                array[i] = random.Next(0, n);
+                sum += array[i];
+            }
+            return sum / n;
+        }
+
+        private async void button12_Click(object sender, EventArgs e)
+        {
+            float avarage = await CalculateAverage((int)numericUpDown1.Value);
+            textBox2.Text = avarage.ToString();
         }
     }
 }
